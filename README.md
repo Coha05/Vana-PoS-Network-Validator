@@ -37,6 +37,7 @@ git clone https://github.com/vana-com/vana.git
 cd vana
 ```
 **2. Configure the Environment**
+
 Copy the example environment file and modify it with your preferred configuration:
 ```
 cp .env.example .env
@@ -55,7 +56,10 @@ This will guide you through an interactive process to generate the keys needed f
 ```
 docker compose --profile manual run --rm validator-keygen
 ```
+> **⚠️ Important:** Carefully read the instructions and make sure to save your seed phrase/mnemonic for the validator wallet in a secure location!
+
 **4. Submit Validator Deposits**
+
 After generating your validator keys, you need to submit the deposit for each validator to stake:
 ```
 docker compose --profile init --profile manual run --rm submit-deposits
@@ -63,11 +67,13 @@ docker compose --profile init --profile manual run --rm submit-deposits
 Wait for the transactions to be confirmed before proceeding.
 
 **5. Start All Services**
+
 Once your deposit is confirmed, start all the necessary services (including the validator):
 ```
 docker compose --profile init --profile validator up -d
 ```
 **6. Check Logs**
+
 Monitor your logs to ensure everything is running smoothly:
 ```
 docker ps
@@ -76,6 +82,7 @@ docker ps
 docker logs --tail 50 -f {container-id}
 ```
 **7. Troubleshooting**
+
 - If the `check-config` service fails, check its logs with:
 ```
 docker compose logs check-config
