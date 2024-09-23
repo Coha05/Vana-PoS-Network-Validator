@@ -1,7 +1,7 @@
 # Vana PoS Network Validator Setup
 
 ## This guide will walk you through setting up a validator node for the Vana Proof-of-Stake (PoS) network using Docker.
-
+> **⚠️ Warning:** Please run the validator only after conducting your own research and at your own risk. To activate the validator, you may need to be whitelisted, which requires staking 35,000 $VANA.
 ## Prerequisites
 ### Install Docker & Docker Compose
 
