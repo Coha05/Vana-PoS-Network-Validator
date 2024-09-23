@@ -21,19 +21,14 @@ sudo curl -L "https://github.com/docker/compose/releases/download/v2.3.3/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
-### Hardware Requirements
-
-Ensure your system meets the minimum hardware requirements for running a Vana validator.
-
-**Testnet​**
-
-`2-core CPU`
-
-`8 GB RAM`
-
-`100 GB high-speed SSD`
-
-`86-64 architecture`
+## Testnet Requirements
+### Minimum Hardware Specifications:
+- **CPU**: 2-core
+- **RAM**: 8 GB
+- **Storage**: 100 GB high-speed SSD
+- **Architecture**: x86-64
+  
+Ensure that your machine meets the above requirements for optimal performance on the testnet.
 
 ### Quick Start
 **1. Clone the Vana Repository:**
