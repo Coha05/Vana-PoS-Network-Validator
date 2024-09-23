@@ -50,7 +50,7 @@ cp .env.example .env
 ```
 nano .env
 ```
-- Set the EXTERNAL_IP={Your-VPS-IP}
+- Set the `EXTERNAL_IP`=`{Your-VPS-IP}`
 - Set `USE_VALIDATOR=true` to run a validator node.
 - Set the appropriate `DEPOSIT_*` variables (e.g., RPC URL, contract address, and private key for deposits).
 
